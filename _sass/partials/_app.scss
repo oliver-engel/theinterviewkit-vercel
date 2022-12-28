@@ -12,8 +12,8 @@ html {
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
 
-  @media (max-width: $screen-sm-min) {
-    font-size: 14px;
+  @media (max-width: $screen-sm) {
+    // font-size: 10px;
   }
 }
 
@@ -83,6 +83,15 @@ button.small-button{
 .button-group{
   display: flex;
   gap: $size-2x;
+  align-items: center;
+
+  @media screen and (max-width: 1000px) {
+
+    // flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+  }
+
 }
 // END BUTTONS //////
 
@@ -96,45 +105,6 @@ button.small-button{
 
 }
 
-
-.pill {
-  @include sans;
-  // color:$gray-200;
-  // background-color: #2e2e32;
-  background: rgba(12, 57, 60, 0.1);
-  justify-content: center;
-  align-items: center;
-  font-size: 0.875rem;
-  line-height: 0.875rem;
-  padding: $size-4x $size-8x;
-  border-radius: $border-radius-max;
-  margin-bottom: $size-4x;
-  width: fit-content;
-  font-size: 1.125rem;
-  font-weight: 500;
-
-  display: flex;
-  align-items: center;
-  gap: $size-2x;
-
-  &:before{
-      content:url('/assets/img/icons/check.svg');
-      width:16px;
-  }
-}
-
-.pill-group{
-  display: flex;
-  flex-direction: column;
-  margin-top:$size-10x;
-
-  p{
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: $size-4x;
-    font-size:16px;
-  }
-}
 
 
 body.disable-scroll {
@@ -197,41 +167,6 @@ body{
 
 
 
-// .hero-section{
-//   border:24px solid #1a1e25;
-//
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   height:100vh;
-//   background:#080c14a6;
-//
-//   // @include smaller-width;
-//   // padding: $size-24x 0;
-//
-//
-//   h1{
-//     margin-top:0;
-//
-//   }
-//
-//   .hero-text{
-//     padding: $size-10x 0;
-//     max-width:600px;
-//     h1{
-//       margin-top: 0px !important;
-//     }
-//   }
-//
-//   .left-content{
-//     // padding: $size-12x;
-//     margin: 0 auto;
-//     display: flex;
-//     flex-direction: column;
-//     gap: $size-12x;
-//   }
-// }
 
 .hero-text{
   h1{
@@ -466,12 +401,7 @@ body{
       transform: translateY(0);
     }
   }
-  // position: absolute;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
-  // vertical-align: bottom;
-  // margin: 0 48px;
+
   width:100%;
   max-width:600px;
   padding: 12px 24px;
@@ -488,19 +418,6 @@ body{
 
 }
 
-.ratings{
-
-  display:flex;
-  gap: $size-3x;
-
-  p{
-    font-size:1rem;
-  }
-
-  img{
-    width:100px;
-  }
-}
 
 
 #canvas > canvas{
@@ -540,6 +457,16 @@ height: 100%;
   .left{
     width:100%;
     background-color: #080c14e3 !important;
+    padding: $size-10x $size-4x 0 $size-4x !important;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .column{
+    width:100%;
+
   }
 }
 

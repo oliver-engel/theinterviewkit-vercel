@@ -15,6 +15,12 @@ h1 {
   font-size: 5rem;
 
   line-height:1.125em;
+
+
+  @media (max-width: $screen-sm) {
+    font-size: 3rem;
+  }
+
 }
 
 h2 {
@@ -57,6 +63,10 @@ p {
   font-size: 1.7rem;
   // line-height: 1.5rem;
   // color: $gray-200;
+
+  @media (max-width: $screen-sm) {
+    font-size: 1.4rem;
+  }
 }
 
 p {
