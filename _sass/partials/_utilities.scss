@@ -1,0 +1,63 @@
+//---SPACERS---///
+
+.spacer-1x{
+  height: $size-1x;
+}
+
+.spacer-2x{
+  height: $size-2x;
+}
+
+.spacer-4x{
+  height: $size-4x;
+}
+
+.spacer-6x{
+  height: $size-6x;
+}
+
+.spacer-8x{
+  height: $size-8x;
+}
+
+.spacer-10x{
+  height: $size-10x;
+}
+
+.spacer-12x{
+  height: $size-12x;
+}
+
+.spacer-16x{
+  height: $size-16x;
+}
+
+.spacer-24x{
+  height: $size-24x;
+}
+
+.justify-space-between{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.show-on-mobile{
+  @media (min-width: $screen-xs-min) {
+    display: none;
+  }
+  @media (max-width: $screen-xs-min) {
+    display: contents;
+  }
+}
+
+.hide-on-mobile{
+  @media (min-width: $screen-xs-min) {
+    height: auto;
+  }
+  @media (max-width: $screen-xs-min) {
+    height: 0;
+    display: none;
+  }
+}

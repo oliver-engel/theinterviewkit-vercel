@@ -1,0 +1,181 @@
+// List your mixins in here to keep things tidy
+
+
+// Disable text selection
+@mixin user-select($argument: none){
+  -webkit-user-select: $argument;
+  -moz-user-select: $argument;
+  -ms-user-select: $argument;
+  user-select: $argument;
+}
+
+//Disable interaction
+@mixin disable-interaction{
+  pointer-events: none;
+}
+
+
+
+
+@mixin margin-0-auto{
+  margin:0 auto;
+}
+
+@mixin highlight-color-light{
+  ::selection {
+  background: #2e363d; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #2e363d; /* Gecko Browsers */
+  }
+}
+
+@mixin highlight-color-dark{
+  ::selection {
+  background: #1D2026; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #1D2026; /* Gecko Browsers */
+  }
+}
+//////////////////////////////////////////
+
+// TYPOGRAPHY
+
+@mixin monospace{
+  font-family: $monospace, $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+@mixin serif{
+  font-family: Georgia, serif !important;
+}
+@mixin sans{
+  font-family: $body-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+@mixin header{
+  font-family: $header-font, -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+  font-weight: 600;
+}
+
+//////////////////////////////////////////
+
+// UTILITIES
+@mixin standard-width{
+  max-width: 1200px;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+@mixin smaller-width{
+  max-width: 800px;
+  margin: 0 auto;
+
+}
+
+@mixin standard-width-image{
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+//////////////////////////////////////////
+
+// BUTTONS
+
+@mixin base-button{
+  @include sans;
+  font-weight: 500;
+  font-size: 1.25rem;
+  border-radius: $border-radius-button;
+  padding: $size-3x $size-6x;
+  text-align: center;
+  text-decoration: none;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  cursor: pointer;
+  display: inline-block;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+
+
+  &:hover {
+    // @include scale-rotate;
+    transform: translateY(-2px);
+
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+}
+
+@mixin scale-rotate{
+  transform: scale(1.05) rotate(-1deg);
+}
+
+@mixin small-button{
+  font-size:1rem;
+  // padding: $size-2x $size-4x;
+  min-height: 32px;
+  min-width: 120px;
+
+}
+
+@mixin secondary-button{
+  @include base-button;
+  background-color: transparent;
+  border: 3px solid transparent;
+  color: white;
+  box-shadow: none;
+  width: fit-content;
+
+
+}
+
+@mixin primary-button{
+  @include base-button;
+  // color: $brand;
+  // border: 1px solid $brand;
+  // background:$black;
+  //
+  //
+  // &:hover {
+  // }
+
+
+    background-color: $yellow;
+    border-radius: 4px;
+    border: 0;
+    // box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+    box-sizing: border-box;
+    color: $black;
+    margin: 0;
+    min-height: 56px;
+    min-width: 120px;
+    padding: 16px 20px;
+    position: relative;
+    text-align: center;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+
+
+  &:hover {
+    background-color: #c99115;
+  }
+
+
+
+  }
+
+
+
+
+
+
+
+
+//////////////////////////////////////////

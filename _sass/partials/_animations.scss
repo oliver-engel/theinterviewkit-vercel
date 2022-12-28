@@ -1,0 +1,147 @@
+//----------------------//
+//------ANIMATIONS------//
+//----------------------//
+
+
+@mixin color-change($duration) {
+  animation: $duration ease-out 0s 1 color_change;
+  @keyframes color_change {
+    from {
+      color: $red;
+    }
+
+    to {
+      color: white;
+    }
+  }
+}
+
+@mixin scaleContentIn ($duration, $initial-scale){
+
+  animation: scaleIn $duration;
+  animation-fill-mode: forwards;
+
+  @keyframes scaleIn {
+      0%{
+        opacity:0;
+        transform: scale($initial-scale,$initial-scale);
+      }
+      100% {
+        opacity:1;
+          transform: scale(1,1);
+      }
+  }
+}
+
+@mixin fadeContentIn ($duration) {
+  animation: $duration ease-out 0s 1 fadeInAnimation;
+  @keyframes fadeInAnimation {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin slideContentUp ($duration) {
+  animation: $duration ease-out 0s 1 slideUp;
+
+
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      transform: translateY(60px);
+    }
+
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+.fadeIn {
+  @include fadeContentIn($quick);
+}
+
+.slideUp {
+  @include slideContentUp($quickest);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.hoverScale{
+  transition: 0.2s all;
+  transform: scale(1);
+  &:hover{
+    transform:scale(1.05);
+    transform: rotateZ(1.5);
+  }
+}
+
+@mixin hoverScale{
+  transition: 0.2s all;
+  transform: scale(1);
+  &:hover{
+    transform:scale(1.05);
+    transform: rotateZ(1.5);
+  }
+}
+
+////////////////////
+// Spin Animation
+////////////////////
+
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+////////////////////
+// Text Color Animation
+////////////////////
+
+.letter {
+  @include color-change($quick);
+}
+
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+.bounce {
+  animation: bounce 2s linear infinite;
+  display: inline-block;
+  animation-timing-function: ease-in-out;
+}

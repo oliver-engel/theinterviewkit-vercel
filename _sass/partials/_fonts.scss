@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Graphik';
+    // font-display: swap;
+    src: url('/assets/fonts/Graphik-Regular.eot');
+    src: url('/assets/fonts/Graphik-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Graphik-Regular.woff2') format('woff2'),
+        url('/assets/fonts/Graphik-Regular.woff') format('woff'),
+        url('/assets/fonts/Graphik-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    // font-display: swap;
+    src: url('/assets/fonts/Graphik-Medium.eot');
+    src: url('/assets/fonts/Graphik-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/Graphik-Medium.woff2') format('woff2'),
+        url('/assets/fonts/Graphik-Medium.woff') format('woff'),
+        url('/assets/fonts/Graphik-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    unicode-range: U+000-5FF;
+}
+
+@font-face {
+    font-family: 'Object Sans';
+    src: url('/assets/fonts/ObjectSans-Bold.eot');
+    src: url('/assets/fonts/ObjectSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/ObjectSans-Bold.woff2') format('woff2'),
+        url('/assets/fonts/ObjectSans-Bold.woff') format('woff'),
+        url('/assets/fonts/ObjectSans-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Henrietta';
+    src: url('/assets/fonts/VCHenrietta-Medium.eot');
+    src: url('/assets/fonts/VCHenrietta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/VCHenrietta-Medium.woff2') format('woff2'),
+        url('/assets/fonts/VCHenrietta-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Henrietta';
+    src: url('/assets/fonts/VCHenrietta-SemiBold.eot');
+    src: url('/assets/fonts/VCHenrietta-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('/assets/fonts/VCHenrietta-SemiBold.woff2') format('woff2'),
+        url('/assets/fonts/VCHenrietta-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}

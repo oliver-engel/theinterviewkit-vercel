@@ -1,0 +1,139 @@
+// *{
+//   font-display: swap;
+// }
+//
+// html{
+//   font-size:100%;
+// }
+
+h1, h2, h3, h4, h5 {
+  @include header;
+}
+
+h1 {
+  margin: $size-6x 0;
+  font-size: 5rem;
+
+  line-height:1.125em;
+}
+
+h2 {
+  font-size: 4rem;
+  line-height: 1.125em;
+  margin: $size-4x 0;
+}
+
+h3 {
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-bottom: .5rem;
+
+  i{
+    font-size:1em;
+  }
+}
+
+h5 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+h6{
+  font-size:1em;
+  line-height: 1.8em;
+  font-weight:400;
+  margin-bottom: 0em;
+}
+
+p {
+  @include sans;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.7rem;
+  // line-height: 1.5rem;
+  // color: $gray-200;
+}
+
+p {
+  a {
+    color: $yellow;
+    transition: 0.1s all;
+    border-bottom: 1px solid #cbd4da61;
+
+   &:hover{
+     border-bottom: 1px solid $yellow;
+   }
+  }
+}
+
+.body-small{
+  font-size:1.4rem;
+}
+
+.body-small-emphasized{
+  font-size:1.4rem;
+  font-weight: 500;
+}
+
+sup{
+  @include monospace;
+  font-size:.65em;
+
+}
+
+b {
+  font-weight: 500;
+  color:white;
+}
+
+p > strong{
+  font-weight: 500;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+ol{
+  padding-left: 1.5em;
+  color:inherit;
+}
+
+.subhead{
+  @include sans;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .05em;
+}
+
+
+.animated-header {
+  font-weight: $header-font-weight;
+  overflow: hidden;
+
+}
+
+.animated-header .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+
+li{
+  padding-bottom:10px;
+  color:inherit;
+}
+
+u{
+  text-decoration: none;
+  color: $green;
+  border-bottom: 1px solid $green;
+  padding-bottom: 5px;
+}

@@ -1,0 +1,83 @@
+// TYPE
+$header-font: "Henrietta";
+$header-font-weight: 600;
+$body-font: "Graphik";
+$body-font-weight: 400;
+$monospace: "Fakt Mono";
+
+// CONTENT WIDTHS
+$content-standard: 600px;
+$content-fullwidth: 100vw;
+$vertical-rhythm: 48px;
+
+// BORDER RADIUS
+$border-radius-standard: 1px;
+$border-radius-button: 4px;
+$border-radius-max: 1000px;
+
+
+// GRAYSCALE
+$gray-50: #fafafa;
+$gray-100: #f4f4f5;
+$gray-200: #e4e4e7;
+$gray-300: #d4d4d8;
+$gray-400: #a1a1aa;
+$gray-500: #71717a;
+$gray-600: #52525b;
+$gray-700: #3f3f46;
+$gray-800: #27272a;
+$gray-900: #18181b;
+
+$blue: #0918c7;
+$green: #0C393C;
+$light-green: #9EB2AB;
+$orange: #ffa61a;
+$off-white: #E9EDEA;
+$yellow: #FFBB25;
+$red: #e71a1a;
+$pink: #E5AFA7;
+$black: #080C14;
+
+$brand: #E1C8BE;
+
+$card-color:white;
+// $bg-color: #F5F5F7;
+$bg-color: $black;
+$divider: #2d3338;
+
+$bg-gray: #222225;
+$bg-gray-lighter: #2e363d;
+
+$transp-gray: #282e3978;
+$transp-gray-lighter: #282e3929;
+
+// TYPE COLORS
+$active-link: $green;
+
+// ANIMATIONS
+$quickest: 0.4s;
+$quick: 0.6s;
+$slow: 1s;
+$slowest: 1.5s;
+
+// BREAKPOINTS
+$screen-xs-min: 480px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1240px;
+$screen-xl-min: 1920px;
+
+// SIZING
+$base-unit: 4px;
+$size-1x: 1 * $base-unit;
+$size-2x: 2 * $base-unit;
+$size-3x: 3 * $base-unit;
+$size-4x: 4 * $base-unit;
+$size-5x: 5 * $base-unit;
+$size-6x: 6 * $base-unit;
+$size-7x: 7 * $base-unit;
+$size-8x: 8 * $base-unit;
+$size-10x: 10 * $base-unit;
+$size-12x: 12 * $base-unit;
+$size-16x: 16 * $base-unit;
+$size-24x: 24 * $base-unit;

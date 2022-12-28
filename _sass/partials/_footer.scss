@@ -1,0 +1,19 @@
+.footer-wrapper{
+  // background-color: gray;
+  width:100%;
+
+}
+
+footer {
+  @include smaller-width;
+  // width: 100%;
+  margin: 0 auto;
+  padding: $size-8x 0;
+  text-align: left;
+  p{
+    font-size: 1.4rem;
+  }
+
+  display: flex;
+  justify-content: space-between;
+}
