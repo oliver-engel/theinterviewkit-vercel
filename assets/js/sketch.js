@@ -4,7 +4,6 @@
     var w = canvas.offsetWidth;
     var h = canvas.offsetHeight;
 
-    console.log("initial width: " + w );
 
     // var width = element.clientWidth;
 
@@ -104,7 +103,6 @@
                 //this section uses regex to pull the corresponding sprite file to match the loaded SVG.
                 var regex = /[^\/]+(?=\.[^.]+$)/;
                 var result = path.match(regex);
-                console.log("here it is! " + result);
 
                 var sprite = Bodies.fromVertices(getRandomArbitrary(0, w), getRandomArbitrary(-h, 0), vertexSets, {
                   restitution: .7,
