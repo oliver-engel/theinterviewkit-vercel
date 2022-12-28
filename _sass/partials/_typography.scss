@@ -27,6 +27,10 @@ h2 {
   font-size: 4rem;
   line-height: 1.125em;
   margin: $size-4x 0;
+
+  @media (max-width: $screen-sm) {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {

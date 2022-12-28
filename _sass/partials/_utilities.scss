@@ -53,11 +53,11 @@
 }
 
 .hide-on-mobile{
-  @media (min-width: $screen-xs) {
-    height: auto;
+  @media (max-width: $screen-sm) {
+    display:none;
   }
-  @media (max-width: $screen-xs) {
-    height: 0;
-    display: none;
-  }
+
+  // @media (max-width: $screen-sm) {
+  //   display:none;
+  // }
 }
