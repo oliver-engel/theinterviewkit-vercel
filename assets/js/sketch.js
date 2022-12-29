@@ -56,7 +56,16 @@
 
     var loadAssets = ['button1, phone1'];
 
-    let assetScale = .7;
+    var checkWidth = window.innerWidth;
+    console.log(checkWidth);
+
+
+
+    var assetScale = .7;
+
+    if (checkWidth < 500) {
+      assetScale = .5;
+    }
 
     var bodies = [];
 
@@ -86,7 +95,11 @@
             './assets/img/icons/casestudy.svg',
             './assets/img/icons/cruise.svg',
             './assets/img/icons/price.svg',
-            './assets/img/icons/casestudydetails.svg'
+            './assets/img/icons/casestudydetails.svg',
+            './assets/img/icons/logo-round.svg',
+            './assets/img/icons/protopie.svg'
+
+
 
 
 
@@ -212,7 +225,7 @@
 
 
       //Your custom code here
-      console.log(foundPhysics[0]); //returns a shape corrisponding to the mouse position
+      // console.log(foundPhysics[0]); //returns a shape corrisponding to the mouse position
 
       // foundPhysics[0].
 

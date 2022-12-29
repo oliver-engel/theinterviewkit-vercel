@@ -83,15 +83,27 @@ p {
      border-bottom: 1px solid $yellow;
    }
   }
+
+  @media (max-width: $screen-xs) {
+    font-size: 1.6rem;
+  }
 }
 
 .body-small{
   font-size:1.4rem;
+  opacity:.8;
+  @media (max-width: $screen-xs) {
+    font-size: 1.2rem;
+  }
 }
 
 .body-small-emphasized{
   font-size:1.4rem;
   font-weight: 500;
+  padding-bottom: $size-2x;
+  @media (max-width: $screen-xs) {
+    font-size: 1.2rem;
+  }
 }
 
 sup{

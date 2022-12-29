@@ -1,19 +1,33 @@
 .footer-wrapper{
-  // background-color: gray;
   width:100%;
+  background: #14151C;
+  // margin-top: $size-12x;
+
+  box-shadow: 0px -16px 16px rgba(17,17,26,0.1);
+  z-index: 10000;
+
 
 }
 
 footer {
-  @include smaller-width;
+
+  @include standard-width;
+  max-width: $content-wide;
+
   // width: 100%;
   margin: 0 auto;
   padding: $size-8x 0;
-  text-align: left;
+  text-align: center;
   p{
     font-size: 1.4rem;
   }
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+
+  @media screen and (max-width:$screen-xs){
+display: none;    
+    // margin-bottom: 160px;
+
+  }
 }
