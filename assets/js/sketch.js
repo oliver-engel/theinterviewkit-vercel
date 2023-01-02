@@ -63,6 +63,10 @@
 
     var assetScale = .7;
 
+    if (checkWidth < 1300) {
+      assetScale = .6;
+    }
+
     if (checkWidth < 500) {
       assetScale = .5;
     }
@@ -117,7 +121,10 @@
                 var regex = /[^\/]+(?=\.[^.]+$)/;
                 var result = path.match(regex);
 
-                var sprite = Bodies.fromVertices(getRandomArbitrary(0, w), getRandomArbitrary(-h, 0), vertexSets, {
+                var randX = getRandomArbitrary(0, w);
+                var randY = getRandomArbitrary(-h * 3, 0);
+
+                var sprite = Bodies.fromVertices(randX, randY, vertexSets, {
                   restitution: .7,
                   friction: 0.1,
                     render: {
@@ -133,7 +140,7 @@
                     }
                 });
 
-                engine.timing.timeScale = 0.8;
+                engine.timing.timeScale = 0.7;
 
                 // Matter.Body.setInertia(sprite, Infinity);
 
