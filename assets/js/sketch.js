@@ -98,7 +98,6 @@
             './assets/img/icons/chat.svg',
             './assets/img/icons/casestudy.svg',
             './assets/img/icons/cruise.svg',
-            './assets/img/icons/price.svg',
             './assets/img/icons/casestudydetails.svg',
             './assets/img/icons/logo-round.svg',
             './assets/img/icons/protopie.svg'

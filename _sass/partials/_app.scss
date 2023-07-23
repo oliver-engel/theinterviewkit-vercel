@@ -84,6 +84,8 @@ button.small-button{
   display: flex;
   gap: $size-2x;
   align-items: center;
+  justify-content: center;
+
 
   @media screen and (max-width: 1000px) {
 
@@ -509,7 +511,7 @@ height: 100%;
 
 }
 
-@media screen and (max-width: 1000px) {
+// @media screen and (max-width: 1000px) {
   .right {
     position:absolute;
     top:0;
@@ -532,7 +534,7 @@ height: 100%;
     width:100%;
 
   }
-}
+// }
 
 .left {
   background-color: $black;
@@ -682,4 +684,9 @@ height: 100%;
   button{
     font-size: 1.2rem;
   }
+}
+
+.small{
+  font-size: 1.2rem;
+  opacity: .8;
 }
